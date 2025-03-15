@@ -1,0 +1,15 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./index.css');
+@import url('./partials/header.css');
+@import url('./partials/hero.css');
+@import url('./partials/about.css');
+@import url('./partials/results.css');
+@import url('./partials/teachers.css');
+@import url('./partials/packages.css');
+@import url('./partials/application.css');
+@import url('./partials/footer.css');
