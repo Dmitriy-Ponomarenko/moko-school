@@ -1,5 +1,34 @@
 .header-section {
+  background-color: var(--main-dark);
+  color: var(--white);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.phone-number {
+  font-weight: 600;
+  font-size: 30px;
 }

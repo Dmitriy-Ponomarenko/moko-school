@@ -39,7 +39,6 @@ h6 {
   color: var(--main-dark);
   font-size: 30px;
   font-weight: 400;
-  color: #141024;
   font-weight: 600;
   line-height: 2.625rem;
 }
@@ -95,12 +94,12 @@ input {
 
 .section {
   margin: auto;
+  padding: 0 12px;
 }
 
 .container {
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 10px;
   position: relative;
 }
 
@@ -161,6 +160,7 @@ select:-webkit-autofill:hover {
     max-width: 350px;
     font-size: 17px;
     line-height: 1.75rem;
+    color: var(--white);
   }
 }
 

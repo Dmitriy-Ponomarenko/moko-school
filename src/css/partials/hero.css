@@ -1,2 +1,23 @@
 .hero-section {
+  background-color: var(--main-dark);
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-title {
+  color: var(--white);
+}
+
+.hero-text {
+  color: var(--white);
+}
+
+.img-container {
+  width: 783px;
+  height: 783px;
+  flex-shrink: 0;
+  border-radius: 783px;
+  border: 80px solid var(--white);
 }
