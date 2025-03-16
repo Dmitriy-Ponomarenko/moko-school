@@ -164,7 +164,7 @@ select:-webkit-autofill:hover {
   }
 }
 
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .container {
     padding: 0 64px;
     max-width: 1440px;
