@@ -29,6 +29,21 @@
 }
 
 .phone-number {
-  font-weight: 600;
-  font-size: 30px;
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .phone-number {
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+  }
 }
