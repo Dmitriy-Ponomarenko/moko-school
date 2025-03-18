@@ -1,2 +1,169 @@
-.packages-section {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    padding-left: 240px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: flex-start; 
+    font-size: 50px;
+    justify-content: center;
+}
+
+.all-packages {
+    display: flex;
+    justify-content: center;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.package {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(20, 16, 36, 0.2); 
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.package:hover {
+    background-color: #141024;
+    transform: translateY(-10px) scale(1.05); 
+}
+
+.package h3 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.package:hover h3 {
+    color: #fff;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: 700;
+    color: #141024;
+    margin-bottom: 120px;
+    transition: color 0.3s ease;
+}
+
+.package:hover .price {
+    color: #fff;
+}
+
+.description {
+    font-size: 20px;
+    color: #141024;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.package:hover .description {
+    color: #fff;
+}
+
+a {
+    background-color: #D52027;
+    color: #fff;
+    border: none;
+    padding: 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.apply-button:hover {
+    background-color: #b31a1f;
+}
+
+.pro,
+.robo,
+.prog {
+    border-top: 5px solid black; 
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+    h2 {
+        padding-left: 20px;
+        font-size: 40px;
+    }
+
+    .package {
+        width: 300px;
+        height: 450px;
+    }
+
+    .package h3 {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 40px;
+        margin-bottom: 80px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        padding-left: 10px;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .packages {
+        gap: 20px;
+    }
+
+    .package {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .package h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    a {
+        padding: 15px;
+        font-size: 18px;
+    }
 }
