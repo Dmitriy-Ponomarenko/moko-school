@@ -1,2 +1,14 @@
 .teachers-section {
 }
+
+.teachers-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers-list {
+    gap: 40px;
+  }
+}
