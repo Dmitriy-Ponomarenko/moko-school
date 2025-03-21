@@ -1,3 +1,31 @@
 <section class="section application-section">
-  <div class="container aaplication-container"></div>
+
+    <div class="container">
+        <div class="text-content">
+            <h2 class="offer">Запишитесь на курс  <br>со скидкой 10% <br></h2>
+            <p class="promo-text">Акция действительна до 10 марта 2022 года</p>
+        </div>
+        <div class="form-container">
+            <form action="/submit-form" method="POST">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" placeholder="телефон" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="e-mail" required>
+                </div>
+
+                <button type="submit" class="btn">Оформить заявку</button>
+            </form>
+        </div>
+        
+    </div>
+
 </section>

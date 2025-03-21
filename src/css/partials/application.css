@@ -1,2 +1,134 @@
-.application-section {
+.section.application-section {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 120px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    background-color: #D52027;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.offer {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    line-height: 3rem;
+
+}
+
+.promo-text {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 0;
+    color: #fff;
+    margin-left: 200px;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 300px;
+   
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: #555;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    height: 64px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #D52027;
+    outline: none;
+}
+
+.btn {
+    width: 100%; 
+    padding: 18px; 
+    background-color: #141024;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; 
+    height: 64px; 
+}
+
+
+.btn:hover {
+    background-color: #201841;
+    transform: scale(1.05);
+    transition: all ease-in-out .2s;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .offer {
+        font-size: 24px;
+    }
+
+    .promo-text {
+        font-size: 16px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: none;
+    }
 }

@@ -1,13 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-h2 {
+.text {
     display: flex;
-    padding-left: 240px;
+    padding-left: 300px;
     padding-bottom: 50px;
     flex-direction: column;
     align-items: flex-start; 
@@ -27,12 +20,15 @@ h2 {
     gap: 40px;
 }
 
+.price-name {
+    padding-bottom: 63px;
+}
 .package {
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(20, 16, 36, 0.2); 
-    padding: 20px;
+    padding: 50px;
     width: 400px;
     height: 500px;
     text-align: center;
@@ -41,32 +37,28 @@ h2 {
     flex-direction: column;
 }
 
-.package:hover {
+.package.pro {
+    transform: scale(1.05);
     background-color: #141024;
-    transform: translateY(-10px) scale(1.05); 
 }
 
-.package h3 {
+.package.pro .description, .package.pro .price, .package.pro .price-name {
+    color: #fff;
+}
+
+.package.price-name {
     font-size: 34px;
     margin-bottom: 40px;
     color: black;
     transition: color 0.3s ease;
 }
 
-.package:hover h3 {
-    color: #fff;
-}
-
 .price {
     font-size: 50px;
     font-weight: 700;
     color: #141024;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
     transition: color 0.3s ease;
-}
-
-.package:hover .price {
-    color: #fff;
 }
 
 .description {
@@ -77,36 +69,26 @@ h2 {
     transition: color 0.3s ease;
 }
 
-.package:hover .description {
-    color: #fff;
-}
-
-a {
+.ref {
     background-color: #D52027;
     color: #fff;
     border: none;
-    padding: 20px; 
+    padding: 35px; 
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
     transition: background-color 0.3s ease;
-    margin-top: auto;
+    margin-top: 61px;
     text-decoration: none;
 }
 
-.apply-button:hover {
+.ref:hover {
     background-color: #b31a1f;
-}
-
-.pro,
-.robo,
-.prog {
-    border-top: 5px solid black; 
 }
 
 /* Адаптация для планшетов */
 @media (max-width: 768px) {
-    h2 {
+    .text {
         padding-left: 20px;
         font-size: 40px;
     }
@@ -116,7 +98,7 @@ a {
         height: 450px;
     }
 
-    .package h3 {
+    .package.text {
         font-size: 28px;
     }
 
@@ -132,7 +114,7 @@ a {
 
 
 @media (max-width: 480px) {
-    h2 {
+    .text {
         padding-left: 10px;
         font-size: 30px;
         padding-bottom: 20px;
@@ -148,7 +130,7 @@ a {
         padding: 15px;
     }
 
-    .package h3 {
+    .package.text {
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -162,7 +144,7 @@ a {
         font-size: 16px;
     }
 
-    a {
+    .ref {
         padding: 15px;
         font-size: 18px;
     }
