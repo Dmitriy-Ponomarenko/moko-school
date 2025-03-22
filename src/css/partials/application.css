@@ -1,2 +1,111 @@
 .application-section {
+  background-color: var(--red);
+  padding-bottom: 40px;
+}
+
+.application-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.application-content {
+  margin-bottom: 40px;
+}
+
+.application-content-title {
+  color: var(--white);
+}
+
+.application-content-text {
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.application-form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  width: 100%;
+  padding: 17px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.application-btn-container {
+  width: 100%;
+  display: flex;
+}
+
+.application-btn {
+  max-width: 100%;
+  padding: 16px;
+  background-color: var(--main-dark);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .application-container {
+    justify-content: space-between;
+    text-align: left;
+    padding: 60px;
+    max-width: 900px;
+  }
+
+  .application-content {
+    flex: 1;
+    margin-right: 40px;
+  }
+
+  .form-container {
+    flex: 1;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-container {
+    flex-direction: row;
+    padding-top: 87px;
+  }
+
+  .application-content-title {
+    font-size: 36px;
+    line-height: 2.925rem;
+  }
+
+  .application-content-text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
+
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  padding: 19px 20px;
+  font-size: 18px;
+}
+
+.application-btn {
+  padding: 19px;
+  font-size: 18px;
+}
 }
