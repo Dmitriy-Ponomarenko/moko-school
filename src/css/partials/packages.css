@@ -1,2 +1,80 @@
 .packages-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+
+.packages-title {
+  margin-bottom: 40px;
+}
+
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.package-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.package-card.pro {
+  background-color: var(--main-dark);
+}
+
+.package-card.pro h3,
+.package-card.pro p,
+.package-card.pro a {
+  color: white;
+}
+
+.package-card-name {
+  margin-bottom: 40px;
+}
+
+.package-card-price {
+  color: var(--main-dark);
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.package-card-description {
+  color: var(--main-dark);
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 160%;
+}
+
+.package-card-button {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .packages-container {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .packages-section {
+    margin-bottom: 120px;
+  }
+  
+  .packages-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
