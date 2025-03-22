@@ -1,3 +1,4 @@
+/* Header Section */
 .header-section {
   background-color: var(--main-dark);
   color: var(--white);
@@ -13,6 +14,7 @@
 }
 
 .nav-list {
+  list-style: none;
   display: flex;
   gap: 40px;
 }
@@ -29,6 +31,73 @@
 }
 
 .phone-number {
+  display: none; /* Скрываем телефон на мобильных */
   font-weight: 600;
   font-size: 30px;
+}
+
+.phone-button {
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.nav {
+  display: none; /* Скрываем меню на мобильных */
+}
+
+.burger-button {
+  display: block; /* Показываем бургер-меню на мобильных */
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.burger-menu {
+  display: none; /* Скрываем бургер-меню по умолчанию */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--main-dark);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger-menu.open {
+  display: flex;
+}
+
+/* Mobile First Approach */
+@media screen and (min-width: 768px) {
+  /* Навигация и телефон отображаются на больших экранах */
+  .nav {
+    display: flex;
+  }
+
+  .nav-list-item {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .phone-number {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .phone-button {
+    display: none;
+  }
+
+  .burger-button {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+  }
+
+  .burger-menu {
+    display: none; /* Скрываем бургер-меню на больших экранах */
+  }
 }

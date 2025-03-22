@@ -1,6 +1,7 @@
-<header class="header-section section">
+<header class="section header-section">
   <div class="container header-container">
-    <a href="/" class="logo">ROBO.SCHOOL</a>
+    <a href="/" class="logo">MOKO.SCHOOL</a>
+
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-list-item"><a href="#about">О школе</a></li>
@@ -8,6 +9,33 @@
         <li class="nav-list-item"><a href="#packages">Стоимость</a></li>
       </ul>
     </nav>
+
     <a href="tel:02713602936" class="phone-number">+49 2713 602936</a>
+
+    <a href="tel:02713602936" class="phone-button">
+      <svg width="24" height="24">
+        <use xlink:href="/src/img/icons.svg#icon-phone"></use>
+      </svg>
+    </a>
+    <button id="burger-button" class="burger-button">
+      <svg width="24" height="24">
+        <use xlink:href="/src/img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="burger-menu">
+      <button id="close-menu">
+        <svg width="24" height="24">
+          <use xlink:href="/src/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#about">О школе</a></li>
+        <li class="nav-list-item"><a href="#teachers">Тренеры</a></li>
+        <li class="nav-list-item"><a href="#packages">Стоимость</a></li>
+        <li><a href="tel:02713602936">+49 2713 602936</a></li>
+      </ul>
+    </div>
   </div>
 </header>
