@@ -1,141 +1,111 @@
-.section.application-section {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.application-section {
+  background-color: var(--red);
+  padding-bottom: 40px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 120px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%;
-    background-color: #D52027;
+.application-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: center;
 }
 
-.text-content {
-    flex: 1;
-    margin-right: 40px;
+.application-content {
+  margin-bottom: 40px;
 }
 
-.offer {
-    font-size: 36px;
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: 200px;
-    line-height: 3rem;
-
+.application-content-title {
+  color: var(--white);
 }
 
-.promo-text {
-    font-size: 20px;
-    color: #666;
-    margin-bottom: 0;
-    color: #fff;
-    margin-left: 200px;
+.application-content-text {
+  color: var(--white);
+  margin-top: 10px;
 }
 
 .form-container {
-    flex: 1;
-    max-width: 500px;
-    margin-right: 300px;
-   
+  width: 100%;
+  max-width: 400px;
 }
 
-.form-group {
-    margin-bottom: 10px;
+.application-form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  width: 100%;
+  padding: 17px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.application-btn-container {
+  width: 100%;
+  display: flex;
+}
+
+.application-btn {
+  max-width: 100%;
+  padding: 16px;
+  background-color: var(--main-dark);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .application-container {
+    justify-content: space-between;
     text-align: left;
+    padding: 60px;
+    max-width: 900px;
+  }
+
+  .application-content {
+    flex: 1;
+    margin-right: 40px;
+  }
+
+  .form-container {
+    flex: 1;
+    max-width: 450px;
+  }
 }
 
-label {
-    display: block;
-    margin-bottom: 1px;
-    font-weight: bold;
-    color: #555;
-    font-size: 18px;
+@media screen and (min-width: 1280px) {
+  .application-container {
+    flex-direction: row;
+    padding-top: 87px;
+  }
+
+  .application-content-title {
+    font-size: 36px;
+    line-height: 2.925rem;
+  }
+
+  .application-content-text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
+
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  padding: 19px 20px;
+  font-size: 18px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    width: 100%;
-    padding: 18px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 18px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-    height: 64px;
+.application-btn {
+  padding: 19px;
+  font-size: 18px;
 }
-
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus {
-    border-color: #D52027;
-    outline: none;
-}
-
-.btn-container {
-    width: 100%; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-top: 10px; 
-}
-
-.btn {
-    width: 100%; 
-    padding: 10px;
-    background-color: #141024;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    height: 64px;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #201841;
-    transform: scale(1.05);
-}
-
-
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .text-content {
-        margin-right: 0;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .offer {
-        font-size: 24px;
-    }
-
-    .promo-text {
-        font-size: 16px;
-    }
-
-    .form-container {
-        width: 100%;
-        max-width: none;
-    }
 }

@@ -1,151 +1,80 @@
-.text {
-    display: flex;
-    padding-left: 300px;
-    padding-bottom: 50px;
-    flex-direction: column;
-    align-items: flex-start; 
-    font-size: 50px;
-    justify-content: center;
+.packages-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 10px;
+  margin-bottom: 60px;
 }
 
-.all-packages {
-    display: flex;
-    justify-content: center;
+.packages-title {
+  margin-bottom: 40px;
 }
 
-.packages {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.package-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.package-card.pro {
+  background-color: var(--main-dark);
+}
+
+.package-card.pro h3,
+.package-card.pro p,
+.package-card.pro a {
+  color: white;
+}
+
+.package-card-name {
+  margin-bottom: 40px;
+}
+
+.package-card-price {
+  color: var(--main-dark);
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.package-card-description {
+  color: var(--main-dark);
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 160%;
+}
+
+.package-card-button {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .packages-container {
     gap: 40px;
+  }
 }
 
-.price-name {
-    padding-bottom: 63px;
-}
-.package {
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(20, 16, 36, 0.2); 
-    padding: 50px;
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.package.pro {
-    transform: scale(1.05);
-    background-color: #141024;
-}
-
-.package.pro .description, .package.pro .price, .package.pro .price-name {
-    color: #fff;
-}
-
-.package.price-name {
-    font-size: 34px;
-    margin-bottom: 40px;
-    color: black;
-    transition: color 0.3s ease;
-}
-
-.price {
-    font-size: 50px;
-    font-weight: 700;
-    color: #141024;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
-
-.description {
-    font-size: 20px;
-    color: #141024;
-    font-weight: 500;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
-
-.ref {
-    background-color: #D52027;
-    color: #fff;
-    border: none;
-    padding: 35px; 
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
-    margin-top: 61px;
-    text-decoration: none;
-}
-
-.ref:hover {
-    background-color: #b31a1f;
-}
-
-/* Адаптация для планшетов */
-@media (max-width: 768px) {
-    .text {
-        padding-left: 20px;
-        font-size: 40px;
-    }
-
-    .package {
-        width: 300px;
-        height: 450px;
-    }
-
-    .package.text {
-        font-size: 28px;
-    }
-
-    .price {
-        font-size: 40px;
-        margin-bottom: 80px;
-    }
-
-    .description {
-        font-size: 18px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .text {
-        padding-left: 10px;
-        font-size: 30px;
-        padding-bottom: 20px;
-    }
-
-    .packages {
-        gap: 20px;
-    }
-
-    .package {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
-
-    .package.text {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .price {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .ref {
-        padding: 15px;
-        font-size: 18px;
-    }
+@media screen and (min-width: 1280px) {
+  .packages-section {
+    margin-bottom: 120px;
+  }
+  
+  .packages-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
