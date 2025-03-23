@@ -73,7 +73,7 @@
   .packages-section {
     margin-bottom: 120px;
   }
-  
+
   .packages-container {
     grid-template-columns: repeat(3, 1fr);
   }

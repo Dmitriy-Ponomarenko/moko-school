@@ -12,6 +12,7 @@
   --main-dark-transp: rgba(20, 16, 36, 0.7);
   --form-text-transp: rgba(40, 41, 68, 0.7);
   --gray: #f9f9f9;
+  --gray-transp: rgba(255, 255, 255, 0.7);
   --red: #d52027;
 }
 
@@ -79,6 +80,7 @@ button {
   gap: 10px;
   border-radius: 5px;
   background-color: var(--red);
+  color: var(--white);
   font-size: 16px;
   border: none;
   cursor: pointer;

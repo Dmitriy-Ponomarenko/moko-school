@@ -1,37 +1,33 @@
-<section class="section hero-section">
-  <div class="container hero-container">
-    <div class="hero-content-container">
-      <h1 class="hero-title">ROBO SCHOOL</h1>
-      <p class="hero-text">
-        Курсы повышения квалификации по робототехнике для педагогов начальной
-        школы
-      </p>
-      <button class="button hero-button" type="button">
-        Записаться на курс
-      </button>
+<section class="hero-section section">
+  <div class="hero-container">
+    <h1 class="hero-title">ROBO SCHOOL</h1>
+    <p class="hero-text">
+      Курсы повышения квалификации по робототехнике для педагогов начальной
+      школы
+    </p>
+    <button class="button hero-button" type="button">Записаться на курс</button>
+    <div class="img-container">
+      <picture>
+        <source
+          srcset="
+            /src/img/mobile/hero-woman.png    1x,
+            /src/img/mobile/hero-woman@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /src/img/pc/hero-woman-pc.png    1x,
+            /src/img/pc/hero-woman-pc@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="hero-img"
+          src="/src/img/pc/hero-woman-pc.png"
+          alt="Happy Woman"
+        />
+      </picture>
     </div>
-    <div class="img-container"></div>
-    <picture>
-      <source
-        srcset="
-          ../img/mobile/hero-woman.png    1x,
-          ../img/mobile/hero-woman@2x.png 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="
-          ../img/pc/hero-woman-pc.png    1x,
-          ../img/pc/hero-woman-pc@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img
-        class="hero-img"
-        src="../img/pc/hero-woman-pc.png"
-        alt="Happy Woman"
-      />
-    </picture>
-    <img src="../img/mobile/hero-woman.png" />
   </div>
 </section>
