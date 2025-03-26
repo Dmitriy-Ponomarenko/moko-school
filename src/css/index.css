@@ -14,6 +14,7 @@
   --gray: #f9f9f9;
   --gray-transp: rgba(255, 255, 255, 0.7);
   --red: #d52027;
+  --border-color: rgba(255, 255, 255, 0.4);
 }
 
 html {

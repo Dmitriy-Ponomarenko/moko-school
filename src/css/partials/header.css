@@ -27,53 +27,100 @@
 
 .logo {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
+  flex-grow: 1;
+  line-height: 1.8rem;
 }
 
 .phone-number {
-  display: none; /* Скрываем телефон на мобильных */
+  display: none;
   font-weight: 600;
   font-size: 30px;
 }
 
 .phone-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
   font-size: 30px;
   color: var(--white);
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 .nav {
-  display: none; /* Скрываем меню на мобильных */
+  display: none;
 }
 
 .burger-button {
-  display: block; /* Показываем бургер-меню на мобильных */
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
   font-size: 30px;
   color: var(--white);
+  border-radius: 10px;
 }
 
 .burger-menu {
-  display: none; /* Скрываем бургер-меню по умолчанию */
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--main-dark);
   width: 100%;
-  height: 100vh;
-  z-index: 999;
-  padding: 20px;
+  height: 100%;
+  background-color: var(--main-dark);
+  z-index: 1000;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .burger-menu.open {
   display: flex;
 }
 
-/* Mobile First Approach */
+.burger-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.burger-nav-list-item {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.burger-nav-list-item a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.burger-nav-list-item a:hover {
+  text-decoration: underline;
+}
+
+.close-menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.close-menu-button svg {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (min-width: 768px) {
-  /* Навигация и телефон отображаются на больших экранах */
   .nav {
     display: flex;
   }
@@ -94,10 +141,10 @@
   }
 
   .burger-button {
-    display: none; /* Скрываем бургер-меню на больших экранах */
+    display: none;
   }
 
   .burger-menu {
-    display: none; /* Скрываем бургер-меню на больших экранах */
+    display: none;
   }
 }

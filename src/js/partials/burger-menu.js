@@ -1,6 +1,6 @@
-// src/js/partionals/burger-menu.js
+// src/js/partials/burger-menu.js
 
-document.addEventListener('DOMContentLoaded', () => {
+export function initializeBurgerMenu() {
   const burgerButton = document.getElementById('burger-button');
   const closeButton = document.getElementById('close-menu');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('open');
     });
 
-    // Закрытие при клике вне меню
     mobileMenu.addEventListener('click', event => {
       if (event.target === mobileMenu) {
         mobileMenu.classList.remove('open');
       }
     });
   }
-});
+}
