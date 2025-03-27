@@ -7,6 +7,10 @@
   gap: 20px;
 }
 
+.teachers-name {
+  font-size: 20px;
+}
+
 .swiper-container {
   width: 100%;
   overflow: hidden;
@@ -38,8 +42,41 @@
   left: 10px;
 }
 
+.teacher-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.teacher-more {
+  width: auto;
+  margin-top: 20px;
+  color: var(--red);
+  background-color: transparent;
+  padding: 0;
+  height: 26px
+}
+
+.teachers-name {
+  margin-top: 20px;
+}
+
+.teachers-description {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .teachers-name {
+    font-size: 21px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .teachers-list {
     gap: 40px;
+  }
+
+  .teachers-name {
+    font-size: 24px;
   }
 }

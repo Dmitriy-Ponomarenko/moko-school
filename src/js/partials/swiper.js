@@ -1,4 +1,4 @@
-// src/js/partials/swiper.js
+// src/js/partials/swiper.
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
