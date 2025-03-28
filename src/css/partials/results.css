@@ -1,10 +1,12 @@
 .results-section {
-    padding: 50px 15px;
-    max-width: 1200px;
+    padding: 50px 15px 100px;
+    max-width: 100%;
     margin: 0 auto;
-    text-align: left; 
+    text-align: left;
     background-color: #F9F9F9;
+
 }
+
 
 .name {
     font-size: 32px;
@@ -23,7 +25,7 @@
     width: 100%; 
 }
 
-.descrip {
+.descript {
     text-align: left;
     max-width: 350px;
     margin-bottom: 30px;
@@ -37,9 +39,10 @@
     color: #151515;
     display: inline-block;
     position: relative;
+    
 }
 
-.descrip p {
+.descript p {
     font-size: 16px;
     color: #666;
     margin: 0;
@@ -67,7 +70,7 @@
     visibility: hidden;
     width: 250px;
     background-color: white;
-    color: black;
+    color: #141024;
     text-align: center;
     font-size: 16px;
     font-weight: normal;
@@ -98,7 +101,7 @@
         justify-content: flex-start; 
     }
 
-    .descrip {
+    .descript {
         flex: 1;
         max-width: 30%;
         margin-bottom: 0;
@@ -115,7 +118,7 @@
         font-size: 20px;
     }
 
-    .descrip p {
+    .descript p {
         font-size: 18px;
     }
 }

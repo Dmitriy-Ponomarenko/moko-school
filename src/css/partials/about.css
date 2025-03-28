@@ -1,6 +1,6 @@
 .stats-section {
   padding: 30px 15px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   text-align: left;
 }
@@ -8,7 +8,7 @@
 .title {
   font-size: 30px;
   font-weight: normal;
-  max-width: 90%;
+  max-width: 100%;
   line-height: 1.8;
   padding-bottom: 40px;
 }
@@ -45,8 +45,8 @@
 .desc {
   font-size: 14px;
   color: #38363f;
-  max-width: 250px;
-  margin: 0 auto;
+  max-width: 350px;
+  margin-right: 50px;
 }
 
 @media (min-width: 768px) {
