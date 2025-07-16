@@ -7,6 +7,37 @@
   gap: 20px;
 }
 
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--white);
+  width: 44px;
+  height: 44px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
 @media screen and (min-width: 1280px) {
   .teachers-list {
     gap: 40px;

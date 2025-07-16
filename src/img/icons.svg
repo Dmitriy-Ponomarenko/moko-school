@@ -1,16 +1,37 @@
-<svg aria-hidden="true" style="position: absolute; width: 25px; height: 25px; overflow: hidden;"
+<svg aria-hidden="true" style="position: absolute; width: 44px; height: 44px; overflow: hidden;"
   version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <symbol id="icon-phone" viewBox="0 0 24 24">
+    <symbol id="icon-phone" viewBox="0 0 44 44">
+      <rect opacity="0.4" x="0.5" y="0.5" width="44" height="44" rx="9.5" fill="white"
+        fill-opacity="0.08" stroke="url(#paint0_linear_11_226)" />
+
       <path
         d="M18.1668 14.3797C17.4951 14.2352 16.9637 14.5471 16.4932 14.8194C16.0114 15.1001 15.0951 15.8434 14.57 15.6531C11.8811 14.546 9.35213 12.1925 8.25739 9.49286C8.06444 8.95647 8.80424 8.0344 9.08283 7.54686C9.35316 7.07492 9.65858 6.53852 9.51928 5.86178C9.3934 5.25366 7.76522 3.18188 7.18947 2.61533C6.80977 2.2411 6.42078 2.03527 6.02147 2.00201C4.5202 1.93756 2.84352 3.94073 2.54945 4.41996C1.81274 5.44181 1.81687 6.80152 2.56183 8.45021C4.35717 12.8786 11.1475 19.5618 15.5925 21.4246C16.4128 21.8082 17.1629 22.0005 17.8366 22.0005C18.496 22.0005 19.0831 21.8165 19.5876 21.4516C19.9684 21.2323 22.0536 19.4724 21.9989 17.9307C21.9659 17.5378 21.7606 17.1448 21.3912 16.7644C20.8289 16.1833 18.7704 14.5065 18.1668 14.3797Z"
-        fill="white" />
+        fill="white" transform="translate(10, 10)" />
     </symbol>
 
     <symbol id="icon-menu" viewBox="0 0 44 44">
+      <rect opacity="0.4" x="0.5" y="0.5" width="44" height="44" rx="9.5" fill="white"
+        fill-opacity="0.08" stroke="url(#paint0_linear_11_226)" />
       <line x1="10" y1="16" x2="34" y2="16" stroke="white" stroke-width="2" stroke-linecap="round" />
       <line x1="10" y1="21" x2="34" y2="21" stroke="white" stroke-width="2" stroke-linecap="round" />
       <line x1="10" y1="26" x2="21" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" />
+      <defs>
+        <linearGradient id="paint0_linear_11_226" x1="22" y1="0" x2="22" y2="44"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 44 44">
+      <rect opacity="0.4" x="0.5" y="0.5" width="44" height="44" rx="9.5" fill="white"
+        fill-opacity="0.08" stroke="url(#paint0_linear_11_226)" />
+      <line x1="1.49245" y1="2" x2="12.6" y2="13.1075" stroke="white" stroke-width="2.11065"
+        stroke-linecap="round" />
+      <line x1="1.40039" y1="13.1076" x2="12.5079" y2="2.0001" stroke="white" stroke-width="2.11065"
+        stroke-linecap="round" />
       <defs>
         <linearGradient id="paint0_linear_11_226" x1="22" y1="0" x2="22" y2="44"
           gradientUnits="userSpaceOnUse">
