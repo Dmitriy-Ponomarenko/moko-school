@@ -6,10 +6,10 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: normal;
   max-width: 100%;
-  line-height: 1.8;
+  line-height: 1.6;
   padding-bottom: 40px;
 }
 
@@ -17,75 +17,91 @@
   font-weight: bold;
 }
 
-.stats {
+.stats-title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; 
+  align-items: center; 
   margin-top: 30px;
   padding: 0;
   list-style: none;
-  margin-right: 10px;
+  gap: 20px; 
 }
 
-.stat {
-  margin-bottom: 20px;
+.stats-list {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  width: 100%; 
+  max-width: 350px; 
 }
 
 .number {
-  font-size: 28px;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.6;
   font-weight: bold;
-  color: #d52027;
-  text-align: left;
-  padding-bottom: 30px;
+  color: var(--red);
 }
 
 .desc {
-  font-size: 14px;
-  color: #38363f;
-  max-width: 350px;
-  margin-right: 50px;
+  font-size: 16px;
+  align-items: center;
+  color: var(--main-dark-transp);
+  margin-right: 0; 
 }
 
-@media (min-width: 768px) {
+.school-name {
+  font-weight: 600;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .title {
     font-size: 22px;
     max-width: 80%;
   }
 
-  .stats {
+  .stats-title {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; 
+    gap: 30px 40px; 
   }
 
-  .stat {
-    flex: 1 1 45%;
-    max-width: 50%;
+  .stats-list {
+    flex: 0 1 45%; 
+    max-width: 45%;
+    width: auto;
+    text-align: left;
   }
 }
+
 
 @media (min-width: 1024px) {
   .title {
     font-size: 30px;
-    max-width: 700px;
+    max-width: 600px;
     text-align: left;
   }
 
-  .stats {
+  .stats-title {
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start; 
   }
 
-  .stat {
-    flex: 1;
-    max-width: 25%;
+  .stats-list {
+    flex: 0 1 23%; 
+    max-width: 23%;
+    width: auto;
+    text-align: left;
   }
 
   .number {
     font-size: 70px;
+   text-align: left;
   }
 
   .desc {

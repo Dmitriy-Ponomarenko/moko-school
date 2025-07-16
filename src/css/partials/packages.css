@@ -31,7 +31,7 @@
 .package-card.pro h3,
 .package-card.pro p,
 .package-card.pro a {
-  color: white;
+  color: var(--white);
 }
 
 .package-card-name {
@@ -41,7 +41,7 @@
 .package-card-price {
   color: var(--main-dark);
   font-size: 50px;
-  line-height: 70px;
+  line-height: 7rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
