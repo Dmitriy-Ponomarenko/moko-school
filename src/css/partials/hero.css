@@ -65,12 +65,12 @@
     text-align: left;
   }
   .img-container {
-    width: 400px;
-    height: 400px;
-    border: 40px solid var(--white);
+    width: 200px;
+    height: 200px;
+    border: 20px solid var(--white);
   }
   .hero-img {
-    width: 350px;
+    width: 120px;
   }
 }
 
