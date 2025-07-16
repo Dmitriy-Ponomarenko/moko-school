@@ -1,4 +1,10 @@
 .teachers-section {
+  padding-top: 60px;
+}
+
+.teachers-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .teachers-list {
