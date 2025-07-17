@@ -1,8 +1,7 @@
 .packages-section {
   text-align: center;
   margin-top: 30px;
-  padding: 0 10px;
-  margin-bottom: 60px;
+  padding: 60px 10px;
 }
 
 .packages-title {
@@ -12,7 +11,7 @@
 .packages-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -22,16 +21,20 @@
   border: 1px solid rgba(20, 16, 36, 0.2);
   padding: 40px 20px;
   text-align: center;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.package-card.pro {
-  background-color: var(--main-dark);
-}
-
-.package-card.pro h3,
-.package-card.pro p,
-.package-card.pro a {
+.package-card:hover .package-card-name,
+.package-card:hover .package-card-price,
+.package-card:hover .package-card-description {
   color: var(--white);
+}
+
+.package-card:hover {
+  background-color: var(--main-dark);
+  transform: scale(1.05);
 }
 
 .package-card-name {
@@ -48,11 +51,10 @@
 
 .package-card-description {
   color: var(--main-dark);
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 40px;
   line-height: 160%;
 }
-
 
 .package-card-button {
   display: inline-block;
@@ -62,6 +64,11 @@
   border-radius: 6px;
   font-size: 18px;
   transition: background-color 0.3s ease;
+}
+.package-card-button:hover{
+  text-decoration: none;
+  color: var(--white);
+  background-color: #ff0008;
 }
 
 @media screen and (min-width: 768px) {

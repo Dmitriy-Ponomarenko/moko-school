@@ -7,8 +7,9 @@
 .application-container {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   text-align: center;
+  max-width: 1200px;
 }
 
 .application-content {
@@ -17,16 +18,17 @@
 
 .application-content-title {
   color: var(--white);
+    padding: 40px 10px;
 }
 
 .application-content-text {
   color: var(--white);
-  margin-top: 10px;
+
 }
 
 .form-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .application-form-group {
@@ -44,6 +46,7 @@ input[type='email'] {
   font-size: 18px;
 }
 
+
 .application-btn-container {
   width: 100%;
   display: flex;
@@ -58,6 +61,9 @@ input[type='email'] {
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+}
+.application-btn:hover{
+  background-color: #0e0046;
 }
 
 @media screen and (min-width: 768px) {
