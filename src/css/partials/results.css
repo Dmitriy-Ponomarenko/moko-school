@@ -1,2 +1,144 @@
-.result-section {
+.results-section {
+    padding: 40px 10px 52px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: var(--gray);
+}
+
+
+.name {
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    gap: 40px;
+}
+
+.descript {
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.achievements {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--achivment-color);
+    /* display: inline-block; */
+    position: relative;
+    
+}
+
+.descript p {
+    font-size: 16px;
+    color: var(--res-descritp-color);
+    margin: 0;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    bottom: 6px;
+}
+
+.info-icon {
+    background-color: var(--back-color);
+    border-radius: 50%;
+    padding: 5px;              
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: var(--res-icon-color);
+    line-height: 1;            
+    width: 24px;               
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 250px;
+    background-color: var(--white);
+    color: var(--tooltip-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 100%;
+    right: -200%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform:  translateY(-1px);
+}
+
+
+@media (min-width: 768px) {
+
+    .name {
+        text-align: center;
+    }
+    .content {
+        flex-direction: row;
+        justify-content: flex-start; 
+    }
+
+    .achievements {
+        text-align: center;
+    }
+
+    .descript {
+        flex: 1;
+        max-width: 30%;
+        margin-bottom: 0;
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .name {
+        font-size: 50px;
+        text-align: left;
+        width: 800px;
+    }
+
+    .achievements {
+        font-size: 20px;
+        text-align: left;
+        
+    }
+
+    .descript p {
+        font-size: 18px;
+        text-align: left;
+    }
 }
