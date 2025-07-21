@@ -7,7 +7,6 @@
 .application-container {
   display: flex;
   flex-direction: column;
-  /* padding-top: 40px; */
   text-align: center;
   max-width: 1200px;
 }
@@ -18,7 +17,7 @@
 
 .application-content-title {
   color: var(--white);
-    padding: 40px 10px;
+    padding: 40px 0px;
 }
 
 .application-content-text {
@@ -71,7 +70,7 @@ input[type='email'] {
     justify-content: space-between;
     text-align: left;
     padding: 60px;
-    max-width: 900px;
+    /* max-width: 900px; */
   }
 
   .application-content {
@@ -85,7 +84,7 @@ input[type='email'] {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .application-container {
     flex-direction: row;
     padding-top: 87px;
