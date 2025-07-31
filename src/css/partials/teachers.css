@@ -18,34 +18,50 @@
 }
 
 .swiper-container {
+  position: relative;
+}
+
+/* Scrollbar at the bottom */
+.swiper-scrollbar {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   width: 100%;
-  overflow: hidden;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
-.swiper-wrapper {
-  display: flex;
+.swiper-scrollbar-drag {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }
 
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
+/* Navigation buttons container on the right below slides */
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--white);
-  width: 44px;
-  height: 44px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  color: var(--red);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Align right and stack vertically */
+.swiper-button-prev {
+  right: 10px;
+  bottom: 70px; /* above next */
 }
 
 .swiper-button-next {
   right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px;
+  bottom: 20px;
 }
 
 .teacher-content {
@@ -60,7 +76,7 @@
   color: var(--red);
   background-color: transparent;
   padding: 0;
-  height: 26px
+  height: 26px;
 }
 
 .teachers-name {

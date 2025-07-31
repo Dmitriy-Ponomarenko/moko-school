@@ -7,18 +7,29 @@ export function initializeSwiper() {
   new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 20,
+
+    // Add scrollbar config here:
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      hide: false,
+    },
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
     autoplay: {
       delay: 5000,
       disableOnInteraction: true,
     },
+
     breakpoints: {
       768: {
         slidesPerView: 2,
@@ -31,7 +42,3 @@ export function initializeSwiper() {
     },
   });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  initializeSwiper();
-});
