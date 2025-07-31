@@ -1,6 +1,7 @@
 .hero-section {
   background-color: var(--main-dark);
   padding: 0 10px 40px;
+  height: calc(100vh - 75px);
 }
 
 .hero-container {
@@ -17,6 +18,7 @@
 .hero-title {
   grid-area: title;
   color: var(--white);
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 

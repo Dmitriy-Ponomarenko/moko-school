@@ -14,6 +14,7 @@
   --gray: #f9f9f9;
   --gray-transp: rgba(255, 255, 255, 0.7);
   --red: #d52027;
+  --red-dark: #b9191f;
   --back-color: #f0f0f0;
   --res-icon-color: #333;
   --res-descritp-color: #666;
@@ -21,6 +22,7 @@
   --tooltip-color: #141024;
   --desc-about: #38363f;
   --border-color: rgba(255, 255, 255, 0.4);
+  --accent-color: #f4b400;
 }
 
 html {
