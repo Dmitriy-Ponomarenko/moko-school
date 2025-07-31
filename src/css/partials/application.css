@@ -1,7 +1,7 @@
+/* Application Section */
 .application-section {
   background-color: var(--red);
   padding-bottom: 40px;
-  
 }
 
 .application-container {
@@ -17,12 +17,11 @@
 
 .application-content-title {
   color: var(--white);
-    padding: 40px 0px;
+  padding: 40px 0px;
 }
 
 .application-content-text {
   color: var(--white);
-
 }
 
 .form-container {
@@ -45,7 +44,6 @@ input[type='email'] {
   font-size: 18px;
 }
 
-
 .application-btn-container {
   width: 100%;
   display: flex;
@@ -61,7 +59,7 @@ input[type='email'] {
   font-weight: 400;
   cursor: pointer;
 }
-.application-btn:hover{
+.application-btn:hover {
   background-color: #0e0046;
 }
 

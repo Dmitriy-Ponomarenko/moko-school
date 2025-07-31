@@ -1,3 +1,4 @@
+/* About Section */
 .stats-section {
   padding: 60px 10px;
   max-width: 1600px;
@@ -19,20 +20,20 @@
 
 .stats-title {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 0;
   list-style: none;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .stats-list {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100%; 
-  max-width: 350px; 
+  width: 100%;
+  max-width: 350px;
 }
 
 .number {
@@ -41,20 +42,18 @@
   line-height: 1.6;
   font-weight: bold;
   color: var(--red);
-  
 }
 
 .desc {
   font-size: 16px;
   align-items: center;
   color: var(--main-dark-transp);
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .school-name {
   font-weight: 600;
 }
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .title {
@@ -69,18 +68,17 @@
   .stats-title {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; 
-    gap: 30px 40px; 
+    justify-content: center;
+    gap: 30px 40px;
   }
 
   .stats-list {
-    flex: 0 1 45%; 
+    flex: 0 1 45%;
     max-width: 45%;
     width: auto;
     text-align: left;
   }
 }
-
 
 @media (min-width: 1024px) {
   .title {
@@ -94,11 +92,11 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 40px;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   .stats-list {
-    flex: 0 1 23%; 
+    flex: 0 1 23%;
     max-width: 23%;
     width: auto;
     text-align: left;
@@ -106,7 +104,7 @@
 
   .number {
     font-size: 70px;
-   text-align: left;
+    text-align: left;
   }
 
   .desc {
