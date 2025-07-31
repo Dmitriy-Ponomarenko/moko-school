@@ -5,10 +5,15 @@ import 'swiper/css/bundle';
 
 export function initializeSwiper() {
   new Swiper('.swiper-container', {
-    slidesPerView: 1,
     spaceBetween: 20,
-
-    // Add scrollbar config here:
+    slidesPerView: 1,
+    slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesProgress: true,
+    lazy: {
+      loadOnTransitionStart: false,
+      loadPrevNext: true,
+    },
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
@@ -21,8 +26,8 @@ export function initializeSwiper() {
     },
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      prevEl: '#swiper-next',
+      nextEl: '#swiper-prev',
     },
 
     autoplay: {
@@ -32,12 +37,12 @@ export function initializeSwiper() {
 
     breakpoints: {
       768: {
-        slidesPerView: 2,
         spaceBetween: 30,
+        slidesPerView: 2,
       },
       1280: {
-        slidesPerView: 3,
         spaceBetween: 40,
+        slidesPerView: 4,
       },
     },
   });

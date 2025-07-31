@@ -87,11 +87,21 @@
       </div>
 
       <!-- Swiper Scrollbar -->
-      <div class="swiper-scrollbar"></div>
+      <div class="swiper-scrollbar" id="swiper-scrollbar"></div>
 
       <!-- Swiper Navigation -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-buttons-wrapper">
+        <div class="swiper-button-prev" id="swiper-prev">
+          <svg width="40" height="40">
+            <use xlink:href="/src/img/icons.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" id="swiper-next">
+          <svg width="40" height="40">
+            <use xlink:href="/src/img/icons.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>

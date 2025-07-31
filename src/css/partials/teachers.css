@@ -13,23 +13,31 @@
   gap: 20px;
 }
 
+.teachers-image {
+  width: 300px;
+}
+
 .teachers-name {
   font-size: 20px;
+  line-height: 20px;
 }
 
 .swiper-container {
   position: relative;
+  overflow: hidden;
+  height: 560px;
 }
 
-/* Scrollbar at the bottom */
-.swiper-scrollbar {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+.swiper-wrapper {
+  padding-left: 22px;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+#swiper-scrollbar {
+  bottom: 0px;
 }
 
 .swiper-scrollbar-drag {
@@ -37,31 +45,31 @@
   border-radius: 3px;
 }
 
-/* Navigation buttons container on the right below slides */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
+#swiper-next,
+#swiper-prev {
   width: 40px;
   height: 40px;
-  background: var(--white);
-  color: var(--red);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Align right and stack vertically */
-.swiper-button-prev {
-  right: 10px;
-  bottom: 70px; /* above next */
+.swiper-buttons-wrapper {
+  position: absolute;
+  right: 70px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  z-index: 20;
+}
+.swiper-button-prev:after {
+  display: none;
 }
 
-.swiper-button-next {
-  right: 10px;
-  bottom: 20px;
+.swiper-button-next:after {
+  display: none;
 }
 
 .teacher-content {
@@ -85,11 +93,30 @@
 
 .teachers-description {
   margin-top: 10px;
+  line-height: 10px;
 }
 
 @media screen and (min-width: 768px) {
+  .teachers-title {
+    line-height: 40px;
+  }
+
   .teachers-name {
     font-size: 21px;
+    line-height: 21px;
+  }
+
+  .swiper-container {
+    height: 580px;
+  }
+
+  .swiper-buttons-wrapper {
+    right: 70px;
+    bottom: 32px;
+  }
+
+  .teachers-description {
+    line-height: 17px;
   }
 }
 
@@ -100,5 +127,14 @@
 
   .teachers-name {
     font-size: 24px;
+  }
+
+  .swiper-buttons-wrapper {
+    right: 370px;
+    bottom: 16px;
+  }
+
+  #swiper-scrollbar {
+    width: 360px;
   }
 }
