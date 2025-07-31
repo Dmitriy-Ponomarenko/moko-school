@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
-import injectHTML from 'vite-plugin-html-inject';
+import nunjucks from 'vite-plugin-nunjucks';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
@@ -38,7 +37,9 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
+      nunjucks({
+        templatesDir: 'src/partials', // путь к папке с partials
+      }),
       FullReload(['./src/**/*.html', './src/**/*.css', './src/**/*.js']),
       SortCss({
         sort: 'mobile-first',

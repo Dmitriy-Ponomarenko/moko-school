@@ -12,10 +12,12 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "glob": "^11.0.0",
+    "nunjucks": "^3.2.4",
     "postcss": "^8.4.49",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.4.2",
-    "vite": "^6.0.3"
+    "vite": "^6.0.3",
+    "vite-plugin-nunjucks": "^0.2.0"
   },
   "dependencies": {
     "swiper": "^11.1.15",
