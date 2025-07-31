@@ -1,3 +1,4 @@
+/* Packages Section */
 .packages-section {
   text-align: center;
   margin-top: 30px;
@@ -65,7 +66,7 @@
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
-.package-card-button:hover{
+.package-card-button:hover {
   text-decoration: none;
   color: var(--white);
   background-color: #ff0008;

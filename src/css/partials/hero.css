@@ -1,4 +1,4 @@
-/* Animation keyframes */
+/* Hero Section */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -47,12 +47,11 @@
   }
 }
 
-/* Apply animations to hero section elements */
 .hero-section {
   background-color: var(--main-dark);
   padding: 0 10px 40px;
   height: calc(100vh - 75px);
-  overflow: hidden; /* Prevent overflow during animations */
+  overflow: hidden;
 }
 
 .hero-container {
@@ -64,8 +63,8 @@
     'button';
   text-align: center;
   justify-items: center;
-  opacity: 0; /* Start hidden for animation */
-  animation: fadeInUp 0.8s ease-out 0.2s forwards; /* Animate container */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
 .hero-title {
@@ -98,7 +97,8 @@
 }
 
 .hero-button:hover {
-  transform: scale(1.05); /* Subtle scale on hover */
+  transform: scale(1.05);
+  background: var(--red-dark);
 }
 
 .img-container {
@@ -114,6 +114,7 @@
   animation:
     scaleIn 1s ease-out 0.3s forwards,
     pulseBorder 3s ease-in-out infinite;
+  user-select: none;
 }
 
 .hero-img {
@@ -124,9 +125,9 @@
   z-index: 1;
   opacity: 0;
   animation: scaleIn 1s ease-out 0.5s forwards;
+  user-select: none;
 }
 
-/* Media query for tablets */
 @media screen and (min-width: 768px) {
   .hero-section {
     height: 600px;
@@ -143,7 +144,6 @@
   }
 }
 
-/* Media query for desktops */
 @media screen and (min-width: 1280px) {
   .hero-section {
     height: calc(100vh - 96px);
@@ -168,14 +168,14 @@
     position: relative;
     margin: 0;
     top: 90px;
-    animation: slideInLeft 0.8s ease-out 0.4s forwards; /* Reapply for desktop */
+    animation: slideInLeft 0.8s ease-out 0.4s forwards;
   }
 
   .hero-text {
     font-size: 20px;
     margin-bottom: 0;
     width: 381px;
-    animation: slideInLeft 0.8s ease-out 0.6s forwards; /* Reapply for desktop */
+    animation: slideInLeft 0.8s ease-out 0.6s forwards;
   }
 
   .hero-button {
@@ -184,7 +184,7 @@
     left: -56px;
     width: 270px;
     height: 79px;
-    animation: fadeInUp 0.8s ease-out 0.8s forwards; /* Reapply for desktop */
+    animation: fadeInUp 0.8s ease-out 0.8s forwards;
   }
 
   .img-container {
