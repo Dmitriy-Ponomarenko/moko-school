@@ -1,7 +1,57 @@
+/* Hero Section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseBorder {
+  0% {
+    border-color: var(--white);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    border-color: var(--white);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .hero-section {
   background-color: var(--main-dark);
   padding: 0 10px 40px;
   height: calc(100vh - 75px);
+  overflow: hidden;
 }
 
 .hero-container {
@@ -13,6 +63,8 @@
     'button';
   text-align: center;
   justify-items: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
 .hero-title {
@@ -20,6 +72,8 @@
   color: var(--white);
   margin-top: 30px;
   margin-bottom: 10px;
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out 0.4s forwards;
 }
 
 .hero-text {
@@ -27,12 +81,24 @@
   color: var(--white);
   font-size: 16px;
   margin-bottom: 55px;
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out 0.6s forwards;
 }
 
 .hero-button {
   grid-area: button;
   margin-top: -49px;
   z-index: 999;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.8s forwards;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  background: var(--red-dark);
 }
 
 .img-container {
@@ -42,9 +108,13 @@
   border-radius: 273px;
   border: 27.893px solid var(--white);
   display: flex;
-
   justify-content: center;
   position: relative;
+  opacity: 0;
+  animation:
+    scaleIn 1s ease-out 0.3s forwards,
+    pulseBorder 3s ease-in-out infinite;
+  user-select: none;
 }
 
 .hero-img {
@@ -53,47 +123,85 @@
   max-width: 280px;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  animation: scaleIn 1s ease-out 0.5s forwards;
+  user-select: none;
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    height: 600px;
+  }
+
+  .img-container {
+    width: 340px;
+    height: 340px;
+    border: 30px solid var(--white);
+  }
+
+  .hero-img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    height: calc(100vh - 96px);
+  }
+
   .hero-container {
+    max-width: 1440px;
+    margin: 0 auto;
     grid-template-columns: 516px auto;
     grid-template-areas:
       'title image'
       'text image'
       'button image';
-    align-items: center;
-    justify-content: center;
     text-align: left;
+    justify-content: center;
+    align-items: center;
   }
-  .img-container {
-    width: 200px;
-    height: 200px;
-    border: 20px solid var(--white);
-  }
-  .hero-img {
-    width: 120px;
-  }
-}
 
-@media screen and (min-width: 1280px) {
-  .hero-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    grid-template-columns: 516px auto;
-  }
   .hero-title {
     font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    margin: 0;
+    top: 90px;
+    animation: slideInLeft 0.8s ease-out 0.4s forwards;
   }
+
   .hero-text {
     font-size: 20px;
+    margin-bottom: 0;
+    width: 381px;
+    animation: slideInLeft 0.8s ease-out 0.6s forwards;
   }
+
+  .hero-button {
+    position: relative;
+    top: -30px;
+    left: -56px;
+    width: 270px;
+    height: 79px;
+    animation: fadeInUp 0.8s ease-out 0.8s forwards;
+  }
+
   .img-container {
-    width: 783px;
-    height: 783px;
-    border: 80px solid var(--white);
+    width: 500px;
+    height: 500px;
+    border: 50px solid var(--white);
+    border-radius: 50%;
+    top: 81px;
+    animation:
+      scaleIn 1s ease-out 0.3s forwards,
+      pulseBorder 3s ease-in-out infinite;
   }
+
   .hero-img {
-    width: 650px;
+    width: 350px;
+    max-width: 350px;
+    top: -120px;
+    animation: scaleIn 1s ease-out 0.5s forwards;
   }
 }
