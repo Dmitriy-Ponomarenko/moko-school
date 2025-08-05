@@ -1,0 +1,282 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 15px;
+
+  border-radius: 20px;
+  max-width: 400px;
+  width: 90%;
+  z-index: 1;
+}
+
+.modal-close {
+  display: none;
+}
+
+.title-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.modal-teachers-image {
+  width: 120px;
+  /* height: 180px; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-photo {
+  width: 120px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal-name {
+  /* font-size: 20px; */
+  font-size: 17px;
+
+  margin: 0;
+}
+
+.modal-role {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.modal-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #141024;
+  border-radius: 50%;
+}
+
+.social-link svg {
+  fill: #ffffff;
+}
+
+.first {
+  width: 70%;
+  height: 70%;
+}
+
+.second {
+  height: 70%;
+}
+.modal-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+  /* overflow-x: auto; */
+}
+
+.modal-tab {
+  flex: 1;
+  padding: 0;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  font-size: 12px;
+  cursor: pointer;
+  color: #141024;
+  transition:
+    transform 0.3s ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.modal-tab:hover {
+  transform: scale(1.1);
+}
+
+.modal-tab.active {
+  color: var(--red, #e2001a);
+  transform: scale(1.1);
+}
+
+.modal-tab.disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.information-title {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.information {
+  padding-bottom: 10px;
+}
+
+.modal-tab-wrapper {
+  height: 200px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+.modal-tab-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-tab-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-tab-content {
+  position: relative;
+}
+
+.tab-panel {
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.tab-panel.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .modal-content {
+    max-width: 600px;
+    padding: 24px;
+  }
+
+  .modal-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+
+    font-size: 16px;
+
+    transition: transform 150ms ease-in-out;
+  }
+
+  .modal-close:hover {
+    transform: scale(1.1);
+  }
+
+  .modal-teachers-image {
+    width: 160px;
+    height: 222px;
+  }
+
+  .modal-info {
+    margin-left: 20px;
+    flex: 1;
+  }
+
+  .modal-name {
+    font-size: 30px;
+  }
+
+  .modal-role {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .modal-socials {
+    justify-content: flex-start;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+    transition: transform 250ms ease-in-out;
+  }
+
+  .social-link:hover {
+    transform: scale(1.1);
+  }
+
+  .first {
+    width: 70%;
+    height: 70%;
+  }
+
+  .second {
+    height: 70%;
+  }
+
+  .modal-tab {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .modal-content {
+    max-width: 940px;
+    padding: 32px;
+  }
+
+  .modal-close {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .modal-tab {
+    font-size: 24px;
+  }
+
+  .information-title {
+    font-size: 15px;
+  }
+}
