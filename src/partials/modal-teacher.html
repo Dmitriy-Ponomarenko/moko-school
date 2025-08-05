@@ -3,7 +3,7 @@
 <div class="modal" id="modal-1" aria-hidden="true">
   <div class="modal-overlay" data-close="true">
     <div class="modal-content" role="dialog" aria-modal="true">
-      <!-- <button class="modal-close" aria-label="Закрыть">Close</button> -->
+      <button class="modal-close" aria-label="Close">Close</button>
 
       <ul class="title-menu">
         <li>
@@ -23,32 +23,67 @@
           <p class="modal-role">robotics teacher</p>
           <ul class="modal-socials">
             <li>
-              <a href="#"><img src="/icons/fb.svg" alt="fb" /></a>
+              <a class="social-link" href="#">
+                <svg class="first">
+                  <use xlink:href="/src/img/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="/icons/insta.svg" alt="insta" /></a>
+              <a class="social-link" href="#">
+                <svg class="second">
+                  <use xlink:href="/src/img/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </li>
       </ul>
 
       <div class="modal-tabs">
-        <button class="modal-tab active" data-tab="education">
-          Образование
-        </button>
-        <button class="modal-tab" data-tab="experience">Опыт работы</button>
-        <button class="modal-tab disabled" disabled>Награды</button>
+        <button class="modal-tab active" data-tab="education">Education</button>
+        <button class="modal-tab" data-tab="experience">Experience</button>
+        <button class="modal-tab" data-tab="awards">Awards</button>
       </div>
 
-      <div class="modal-tab-content">
-        <div class="tab-panel active" data-content="education">
-          <p><strong>Сентябрь 1995 — Июнь 2000</strong></p>
-          <p>Санкт-Петербургский политехнический университет...</p>
-        </div>
+      <div class="modal-tab-wrapper">
+        <div class="modal-tab-content">
+          <div class="tab-panel active" data-content="education">
+            <p class="information-title">September 1995 – June 2000</p>
+            <p class="information">Saint Petersburg Polytechnic University.</p>
 
-        <div class="tab-panel" data-content="experience">
-          <p><strong>2010 — 2020</strong></p>
-          <p>Инженер-программист в компании «РобоТех»...</p>
+            <p class="information-title">September 2010 – June 2015</p>
+            <p class="information">Igor Sikorsky Kyiv Polytechnic Institute.</p>
+          </div>
+
+          <div class="tab-panel" data-content="experience">
+            <p class="information-title">2010 — 2020</p>
+            <p class="information">Software engineer at RoboTech.</p>
+            <p class="information-title">2020 — 2024</p>
+            <p class="information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum optio quia voluptatem eveniet ab amet asperiores culpa
+              est harum assumenda. Sequi cum vel architecto mollitia eaque rem
+              minima rerum beatae.
+            </p>
+            <p class="information-title">2020 — 2021</p>
+            <p class="information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum optio quia voluptatem eveniet ab amet asperiores culpa
+              est harum assumenda. Sequi cum vel architecto mollitia eaque rem
+              minima rerum beatae.
+            </p>
+            <p class="information-title">2021 — 2023</p>
+            <p class="information">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum optio quia voluptatem eveniet ab amet asperiores culpa
+              est harum assumenda. Sequi cum vel architecto mollitia eaque rem
+              minima rerum beatae.
+            </p>
+          </div>
+          <div class="tab-panel" data-content="awards">
+            <p class="information-title">No awards listed at this time.</p>
+          </div>
         </div>
       </div>
     </div>

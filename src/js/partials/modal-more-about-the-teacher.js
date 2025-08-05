@@ -22,19 +22,15 @@ export function initializeModalWindows() {
 
     document.addEventListener('keydown', onEsc);
 
-    modal.addEventListener(
-      'click',
-      e => {
-        if (
-          e.target.dataset.close ||
-          e.target.classList.contains('modal-close')
-        ) {
-          closeModal(modal);
-          document.removeEventListener('keydown', onEsc);
-        }
-      },
-      { once: true }
-    );
+    modal.addEventListener('click', e => {
+      if (
+        e.target.dataset.close ||
+        e.target.classList.contains('modal-close')
+      ) {
+        closeModal(modal);
+        document.removeEventListener('keydown', onEsc);
+      }
+    });
   }
 
   function closeModal(modal) {
@@ -44,24 +40,27 @@ export function initializeModalWindows() {
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const tabButtons = document.querySelectorAll('.modal-tab');
-    const tabContents = document.querySelectorAll('.tab-panel');
+    const tabs = document.querySelectorAll('.modal-tab');
+    const panels = document.querySelectorAll('.tab-panel');
 
-    tabButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const target = button.dataset.tab;
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
 
-        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
 
-        tabContents.forEach(content => content.classList.remove('active'));
+        const activePanel = document.querySelector('.tab-panel.active');
+        if (activePanel) {
+          activePanel.classList.remove('active');
 
-        button.classList.add('active');
-
-        const targetPanel = document.querySelector(
-          `.tab-panel[data-content="${target}"]`
-        );
-        if (targetPanel) {
-          targetPanel.classList.add('active');
+          setTimeout(() => {
+            panels.forEach(panel => {
+              if (panel.dataset.content === target) {
+                panel.classList.add('active');
+              }
+            });
+          }, 300);
         }
       });
     });

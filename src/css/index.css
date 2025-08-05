@@ -42,6 +42,7 @@ body {
 /* To block scrolling of the site when a modal window is open */
 body.no-scroll {
   overflow: hidden;
+  margin-right: 8px;
 }
 
 h1,
@@ -80,6 +81,7 @@ ol {
 
 a {
   color: currentColor;
+  display: block;
   text-decoration: none;
 }
 
