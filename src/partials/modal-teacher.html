@@ -1,0 +1,56 @@
+<!-- Modal window -->
+
+<div class="modal" id="modal-1" aria-hidden="true">
+  <div class="modal-overlay" data-close="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <!-- <button class="modal-close" aria-label="Закрыть">Close</button> -->
+
+      <ul class="title-menu">
+        <li>
+          <img
+            srcset="
+              /src/img/pc/teacher2-pc.jpg    1x,
+              /src/img/pc/teacher2-pc@2x.jpg 2x
+            "
+            src="/src/img/pc/teacher2-pc.jpg"
+            alt="Teacher 2"
+            class="modal-teachers-image"
+          />
+        </li>
+
+        <li class="modal-info">
+          <h2 class="modal-name">Marina Orlova</h2>
+          <p class="modal-role">robotics teacher</p>
+          <ul class="modal-socials">
+            <li>
+              <a href="#"><img src="/icons/fb.svg" alt="fb" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="/icons/insta.svg" alt="insta" /></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="education">
+          Образование
+        </button>
+        <button class="modal-tab" data-tab="experience">Опыт работы</button>
+        <button class="modal-tab disabled" disabled>Награды</button>
+      </div>
+
+      <div class="modal-tab-content">
+        <div class="tab-panel active" data-content="education">
+          <p><strong>Сентябрь 1995 — Июнь 2000</strong></p>
+          <p>Санкт-Петербургский политехнический университет...</p>
+        </div>
+
+        <div class="tab-panel" data-content="experience">
+          <p><strong>2010 — 2020</strong></p>
+          <p>Инженер-программист в компании «РобоТех»...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

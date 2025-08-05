@@ -39,6 +39,11 @@ body {
   overflow-x: hidden;
 }
 
+/* To block scrolling of the site when a modal window is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

@@ -1,0 +1,189 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 15px;
+
+  border-radius: 20px;
+  max-width: 375px;
+  width: 90%;
+  z-index: 1;
+}
+
+/* .modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+} */
+
+.title-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-teachers-image {
+  width: 160px;
+  height: 222px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-photo {
+  width: 120px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal-name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.modal-role {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.modal-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.modal-socials li img {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.modal-tab {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-tab.active {
+  border-color: var(--red, #e2001a);
+  font-weight: bold;
+}
+
+.modal-tab.disabled {
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.modal-body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-body p {
+  margin-bottom: 8px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .modal-content {
+    max-width: 600px;
+    padding: 24px;
+  }
+
+  .modal-header {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .modal-photo {
+    width: 160px;
+    height: 222px;
+  }
+
+  .modal-info {
+    margin-left: 20px;
+    flex: 1;
+  }
+
+  .modal-name {
+    font-size: 24px;
+  }
+
+  .modal-role {
+    font-size: 16px;
+  }
+
+  .modal-socials {
+    justify-content: flex-start;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .modal-content {
+    max-width: 720px;
+    padding: 32px;
+  }
+
+  .modal-tab {
+    font-size: 16px;
+  }
+
+  .modal-body {
+    font-size: 15px;
+  }
+}
